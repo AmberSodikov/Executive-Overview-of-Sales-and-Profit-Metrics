@@ -1,54 +1,53 @@
-# SaaS Revenue Intelligence Dashboard (Tableau + Tableau Prep)
+# Tableau Sales Performance Dashboard
 
-mid-level skills show
+## 📊 Overview
 
-This project simulates a real-world Business Intelligence solution for a subscription-based SaaS company. It showcases how Tableau Prep and Tableau Desktop can be used together to integrate multiple messy datasets, clean and enrich them, and deliver actionable insights through stakeholder-facing dashboards.
+This project is a mid-level Tableau dashboard built using the **Sample - Superstore** dataset. The goal is to analyze key business metrics such as sales, profit, and order trends across different time periods, customer segments, regions, and product categories. The dashboard is fully interactive and allows for dynamic filtering by Segment, Region, and Order Date.
 
-## 🎯 Business Use Case
+## 🗂️ Data Source
 
-Executives and customer-facing teams need clear visibility into revenue performance, customer retention, satisfaction (NPS), and operational support trends. This dashboard provides two perspectives:
+- **Dataset:** Sample - Superstore (Tableau bundled dataset)
+- **Fields Used:** Sales, Profit, Order Date, Segment, Region, State, Category, Sub-Category, Order ID
 
-- 📊 **Executive View**: MRR, churn rate, retention, and customer health insights
-- 🛠 **Operations View**: Ticket resolution metrics, engagement scoring, and churn risk indicators
+## 🔍 Key Metrics & Visuals
 
-## 🧪 Data Sources
+- **Total Sales** (KPI)
+- **Profit Margin %** (KPI with trend line)
+- **Total Profit** (KPI with trend line)
+- **Total Orders** (KPI with trend line)
+- **Monthly Sales Trend** (Time series)
+- **Top 5 States by Sales** (Horizontal bar chart)
+- **Category-Level Sales & Profit** (Bar chart with dual metrics)
 
-| File | Description |
-|------|-------------|
-| `raw_saas_data.csv` | Subscription + revenue + churn data  
-| `support_tickets.csv` | Support volume, category, and resolution time  
-| `nps_feedback.csv` | Customer sentiment and NPS scores  
-| `product_usage.csv` | Feature usage, login activity, and engagement  
+## 🎯 Objectives
 
-## 🧼 Data Prep (Tableau Prep)
+- Track performance across customer segments and regions
+- Identify high-performing product categories and states
+- Spot monthly and yearly trends in sales and profitability
+- Enable easy filtering and user-driven exploration
 
-The Prep flow performs:
-- Field cleaning and standardization
-- Join across 4 datasets using `Customer_ID` and `Month`
-- Churn status normalization
-- Calculated fields: Churn Risk Score, Lifetime Value, Engagement Index
-- Output to `.hyper` for dashboard use
+## 🛠️ Tools Used
 
-## 📈 Dashboards (Tableau Desktop)
+- Tableau Desktop (Dashboard + Data Modeling)
+- Tableau Prep (for optional data cleaning and preparation)
 
-### Executive Overview
-- Monthly Recurring Revenue (MRR)
-- Churn Rate (%)
-- Net Promoter Score (NPS)
-- Churn vs. NPS correlation
-- Revenue by Segment & Region
+## 🧠 Insights You Can Extract
 
-### Customer Success Dashboard
-- Support tickets by plan and time
-- Avg. resolution time
-- Engagement scoring model
-- Churn probability heatmap
+- Which customer segments drive the most profit?
+- How have monthly sales trended over time?
+- Which states and categories contribute most to overall revenue?
+- What’s the relationship between sales and profit margin?
 
-## 🧰 Tools Used
-- Tableau Desktop  
-- Tableau Prep  
-- Google Sheets / Excel  
-- GitHub for documentation  
+## 📝 Notes
 
-## 📂 File Structure
+- This project is based on simulated data; while realistic in structure, it does not represent actual business activity.
+- Designed as part of a Tableau portfolio to demonstrate interactive dashboard development, KPI design, and data storytelling.
 
+## 📁 File Structure
+
+/Sales-Dashboard/
+│
+├── Tableau Dashboard.twbx
+├── Superstore Dataset (included with Tableau)
+├── README.md
+└── Dashboard Screenshot.png
